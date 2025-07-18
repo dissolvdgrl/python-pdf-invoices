@@ -1,0 +1,9 @@
+import pandas as pd
+import glob
+
+filepaths = glob.glob("invoices/*.xlsx")
+
+for filepath in filepaths:
+    data_frame = pd.read_excel(filepath, sheet_name="Sheet 1")
+
+
